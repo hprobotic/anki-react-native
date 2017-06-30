@@ -14,13 +14,12 @@ function setup() {
       console.log(this.state);
     }
     render() {
-      console.log('Go here');
       if (this.state.isLoading) {
         return null;
       }
       return (
         <Provider store={this.state.store}>
-          <AnkiApp/>
+          <AnkiApp />
         </Provider>
       );
     }
