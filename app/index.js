@@ -1,14 +1,4 @@
-import { AppRegistry, Hello }  from 'react-native';
-import { Provider } from 'react-redux';
-import { App } from './components';
+import React, { AppRegistry }  from 'react-native';
+import setup from './setup';
 
-const ankiapp = () => {
-  return (
-    <Provider>
-      <App />
-    </Provider>
-  )
-}
-
-export default ankiapp
-AppRegistry.registerComponent('App', () => ankiapp)
+AppRegistry.registerComponent('ankios', setup)
